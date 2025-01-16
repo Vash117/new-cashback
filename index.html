@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Bet Cashback Table</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daily Cashback</h1>
+      <button class="add-name">Добави Нов</button>
+      <div class="table-of-clients"></div>
+    </div>
+    <div class="table-modal">
+      <form action="">
+        <label for="name">Име</label>
+        <input
+          type="text"
+          name="Name"
+          id="name"
+          required
+          placeholder="Име на клиент"
+        />
+        <label for="sur-name">Презиме</label>
+        <input
+          type="text"
+          name="sur-name"
+          id="sur-name"
+          required
+          placeholder="Презиме на клиент"
+        />
+        <label for="lastname">Фамилия</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          required
+          placeholder="Фамилия на клиент"
+        />
+        <label for="cashback">Cashback</label>
+        <input
+          type="number"
+          name="cashback"
+          id="cashback"
+          placeholder="Стойност на Cashback"
+        />
+        <input type="submit" value="Добави" id="add-new-player" />
+        <input type="button" value="Откажи " id="cancel" />
+      </form>
+    </div>
+    <div class="set-new-cashback">
+      <form class="add-cashback-form" action="">
+        <h2>Добави Cashback</h2>
+        <label for="player-name">Име на Играча</label>
+        <input type="text" id="player-name" name="player-name" />
+        <label for="set-new-cashback">Допълнителен Cashback</label>
+        <input
+          type="number"
+          id="new-value"
+          placeholder="Сума на Cashback"
+          name="set-new-cashback"
+        />
+        <button id="set-additional-value">Добави</button>
+        <button>Откажи</button>
+      </form>
+    </div>
+    <div class="hidenOptions">
+      <p id="hiden"></p>
+    </div>
+  </body>
+</html>

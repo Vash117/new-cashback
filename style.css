@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.add-name {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #00ff00;
+  cursor: pointer;
+}
+.table-of-clients {
+  margin: 0 auto;
+}
+form {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="number"] {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+input[type="submit"] {
+  background-color: #00ff00;
+  width: 5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+input[type="button"] {
+  background-color: red;
+  width: 5rem;
+  padding: 1rem;
+}
+.table-modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  display: none;
+}
+label {
+  color: whitesmoke;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+.actions {
+  width: 30%;
+  cursor: pointer;
+}
+.actions + .actions {
+  margin-left: 3rem;
+}
+.actions:first-child {
+  background-color: #00ff00;
+}
+.actions:nth-child(2) {
+  background-color: #85bb65;
+}
+.set-new-cashback {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+.add-cashback-form button {
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.add-cashback-form #set-additional-value {
+  background-color: #00ff00;
+}
+.add-cashback-form button {
+  background-color: red;
+}
