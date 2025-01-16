@@ -1,4 +1,4 @@
-import { html, render } from "lit-html";
+import { html, render } from "./node_modules/lit-html/lit-html.js";
 window.addEventListener("keypress", hidenOption);
 let hiden = [];
 const addPlayer = document.querySelector(".add-name");
